@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- GlobVal site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHR9P0RLYX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SHR9P0RLYX');
+    </script>
+
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
